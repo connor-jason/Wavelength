@@ -1,0 +1,43 @@
+.image-stack {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    margin: 5vh auto 15vh calc(75% - 250px);
+  }
+
+  .img {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+  }
+  
+  .base {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    margin-left: calc(50% - 200px);
+    z-index: 1;
+    transform: translateY(220%);
+  }
+  
+  .triangles {
+    position: absolute;
+    z-index: 3;
+  }
+  
+  .open {
+    position: absolute;
+    z-index: 4;
+  }
+
+  .closed {
+    position: absolute;
+    opacity: 1; 
+    z-index: 5;
+  }
+
+  .spinner {
+    position: absolute;
+    z-index: 6; 
+  }
+  
