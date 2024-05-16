@@ -1,23 +1,44 @@
-.container {
+.gameOptionsContainer {
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    width: fit-content;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.buttons {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    margin-right: 50%;
-    margin-top: 10%;
+    height: fit-content;
 }
 
 .square {
-    width: 200px;
-    height: 200px;
+    width: 20vw;
+    height: 20vw;
     display: inline-block;
     display: grid;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
     padding: 10px;
     text-align: center;
     color: white;
     font-weight: bold;
 }
+
+@media (max-width: 1024px) {
+    .gameOptionsContainer {
+        padding:5vw;
+    }
+    .square {
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
+
+
 .left {
     background-color: teal;
 }

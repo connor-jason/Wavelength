@@ -25,12 +25,12 @@ function RandomCard() {
             return (
                 <>
                     <div className="square left">
-                        <p>{randomCard.left}</p>
                         <p>{'<--------'}</p>
+                        <p>{randomCard.left}</p>
                     </div>
                     <div className="square right">
-                        <p>{randomCard.right}</p>
                         <p>{'-------->'}</p>
+                        <p>{randomCard.right}</p>
                     </div>
                 </>
             );
@@ -38,12 +38,12 @@ function RandomCard() {
             return (
                 <>
                     <div className="square left">
-                        <p></p>
                         <p>{'<--------'}</p>
+                        <p></p>
                     </div>
                     <div className="square right">
-                        <p></p>
                         <p>{'-------->'}</p>
+                        <p></p>
                     </div>
                 </>
             );
@@ -76,15 +76,17 @@ function RandomCard() {
 
     return (
         <>
-            <div className="container">
-                {displayRandomCard(randomCard)}
-            </div>
-            <div className="container" style={{ marginTop: 0 }}>
-                <button className="button" onClick={handleNewRound}>New Round</button>
-                <button className="button" onClick={handleCoverToggle}>
-                    {coverOpen ? 'Close Cover' : 'Open Cover'}
-                </button>
-                <Link to="/deck" className="button" id="viewDeck">View Deck</Link>
+            <div className="gameOptionsContainer">
+                <div className="cards">
+                    {displayRandomCard(randomCard)}
+                </div>
+                <div className="buttons">
+                    <button className="button" onClick={handleNewRound}>New Round</button>
+                    <button className="button" onClick={handleCoverToggle}>
+                        {coverOpen ? 'Close Cover' : 'Open Cover'}
+                    </button>
+                    <Link to="/deck" className="button" id="viewDeck">View Deck</Link>
+                </div>
             </div>
         </>
     );

@@ -14,8 +14,10 @@ const Home = () => {
   return (
     <>
       <h1 style={{ textAlign: 'center', fontWeight: 'bold' }}>Wavelength😼</h1>
-      <DisplayGame />
-      <GameOptions />
+      <div className="mainContainer">
+        <DisplayGame />
+        <GameOptions />
+      </div>
     </>
   );
 };

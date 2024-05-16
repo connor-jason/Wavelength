@@ -1,43 +1,45 @@
 .image-stack {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    margin: 5vh auto 15vh calc(75% - 250px);
-  }
+  position: relative;
+  width: 100%; /* Set the width of the image stack to 100% */
+  height: auto; /* Allow the height to adjust based on the content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.img {
+  max-width: 40vw;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
   .img {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-  }
-  
-  .base {
-    position: absolute;
-    width: 400px;
+    max-height: 40vh;
+    max-width: 100%;
     height: auto;
-    margin-left: calc(50% - 200px);
-    z-index: 1;
-    transform: translateY(220%);
+    width: auto;
   }
-  
-  .triangles {
-    position: absolute;
-    z-index: 3;
-  }
-  
-  .open {
-    position: absolute;
-    z-index: 4;
-  }
+}
 
-  .closed {
-    position: absolute;
-    opacity: 1; 
-    z-index: 5;
-  }
+.triangles {
+  position: absolute;
+  z-index: 3;
+}
 
-  .spinner {
-    position: absolute;
-    z-index: 6; 
-  }
-  
+.open {
+  position: absolute;
+  z-index: 4;
+}
+
+.closed {
+  position: absolute;
+  opacity: 1;
+  z-index: 5;
+}
+
+.spinner {
+  position: absolute;
+  z-index: 6;
+}
+
+

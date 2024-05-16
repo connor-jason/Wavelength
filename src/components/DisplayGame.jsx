@@ -3,7 +3,6 @@ import spinner from '../images/spinner.png';
 import open from '../images/open.png';
 import closed from '../images/closed.png';
 import triangles from '../images/triangles.png';
-import base from '../images/base.png';
 
 const DisplayGame = () => {
     const spinnerRef = useRef(null); // Reference to the spinner image
@@ -48,7 +47,6 @@ const DisplayGame = () => {
                 onMouseDown={handleMouseDown}
             />
             <img src={closed} alt="closed" className="closed img" id="closed" />
-            <img src={base} alt="base" className="base img" id="base" />
         </div>
     );
 };
