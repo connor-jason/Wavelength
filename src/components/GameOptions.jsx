@@ -5,20 +5,37 @@ import { Link } from 'react-router-dom';
 
 function RandomCard() {
     const [randomCard, setRandomCard] = useState(null);
-    const [coverOpen, setCoverOpen] = useState(false); // State to track if cover is open
+    const [coverOpen, setCoverOpen] = useState(false);
+    const [seenCardIds, setSeenCardIds] = useState([]);
 
     const getRandomCard = () => {
         get(child(ref(database), 'Cards/')).then((snapshot) => {
             if (snapshot.exists()) {
                 const cards = snapshot.val();
                 const cardsArray = Object.keys(cards).map((key) => ({ id: key, ...cards[key] }));
-                const randomCard = cardsArray[Math.floor(Math.random() * cardsArray.length)];
-                setRandomCard(randomCard); // Set the random card
+                
+                // Filter out cards that have already been seen
+                const unseenCards = cardsArray.filter((card) => !seenCardIds.includes(card.id));
+    
+                if (unseenCards.length === 0) {
+                    alert('No more unseen cards available');
+                    return;
+                }
+    
+                const randomIndex = Math.floor(Math.random() * unseenCards.length);
+                const randomCard = unseenCards[randomIndex];
+                
+                // Update the list of seen card IDs
+                setSeenCardIds([...seenCardIds, randomCard.id]);
+    
+                // Set the random card
+                setRandomCard(randomCard);
             } else {
                 alert('No cards available');
             }
         });
     };
+    
 
     const displayRandomCard = (randomCard) => {
         if (randomCard) {
