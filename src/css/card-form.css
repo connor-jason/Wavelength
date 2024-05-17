@@ -1,9 +1,8 @@
 .card-form {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
     gap: 10px;
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 90%;
+    margin: 3vh 5vw;
   }
   
   .card-form label {
@@ -11,7 +10,7 @@
   }
   
   .card-form input {
-    width: calc(100% - 10px);
+    width: 100%;
     padding: 5px;
   }
   
