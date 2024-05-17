@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import spinner from '../images/spinner.png';
-import open from '../images/open.png';
+import open_white from '../images/open_white.png';
+import open_clear from '../images/open_clear.png';
 import closed from '../images/closed.png';
 import triangles from '../images/triangles.png';
 
@@ -36,8 +37,9 @@ const DisplayGame = () => {
 
     return (
         <div className="image-stack">
+            <img src={open_white} alt="open_white" className="open_white img" id="open_white" />
             <img src={triangles} alt="triangles" className="triangles img" id="triangles" />
-            <img src={open} alt="open" className="open img" id="open" />
+            <img src={open_clear} alt="open_clear" className="open_clear img" id="open_clear" />
             <img
                 src={spinner}
                 alt="spinner"
