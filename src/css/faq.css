@@ -1,0 +1,12 @@
+.FAQcontainer {
+    margin: 5vh 10vw 7vh 10vw;
+}
+
+.question {
+    font-weight: bold;
+}
+
+.answer {
+    color: #555;
+    margin-left: 3vw;
+}
