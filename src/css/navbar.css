@@ -1,0 +1,27 @@
+.navbar {
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 1vh 0 1vh 0;
+}
+
+.navbar li a {
+    display: inline;
+    padding: 15px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    color: rgb(110, 110, 110);
+}

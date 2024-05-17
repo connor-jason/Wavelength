@@ -2,6 +2,13 @@
 @import url('game-options.css');
 @import url('display-deck.css');
 @import url('card-form.css');
+@import url('navbar.css');
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+}
 
 body {
   font-family: 'Roboto', sans-serif;

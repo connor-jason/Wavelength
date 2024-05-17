@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import DisplayDeck from '../components/DisplayDeck';
 import CardForm from '../components/CardForm';
+import Navbar from '../components/Navbar';
 
 /**
  * The main component of the application.
@@ -11,7 +11,7 @@ import CardForm from '../components/CardForm';
 const Home = () => {
   return (
     <>
-      <Link to="/">Back</Link>
+      <Navbar />
       <CardForm />
       <DisplayDeck />
     </>
