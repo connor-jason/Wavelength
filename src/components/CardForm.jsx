@@ -12,11 +12,13 @@ function CardForm({ addCard }) {
             left: leftInput,
             right: rightInput
         });
-        alert('Added');
+        alert('Card added successfully');
+        setLeftInput('');
+        setRightInput('');
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="card-form" onSubmit={handleSubmit}>
             <label htmlFor="leftInput">Left:</label>
             <input type="text" id="leftInput" value={leftInput} onChange={(e) => setLeftInput(e.target.value)} />
             <label htmlFor="rightInput">Right:</label>

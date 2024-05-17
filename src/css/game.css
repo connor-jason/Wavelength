@@ -1,7 +1,7 @@
 .image-stack {
   position: relative;
-  width: 100%; /* Set the width of the image stack to 100% */
-  height: auto; /* Allow the height to adjust based on the content */
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;

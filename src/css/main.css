@@ -1,5 +1,7 @@
 @import url('game.css');
 @import url('game-options.css');
+@import url('display-deck.css');
+@import url('card-form.css');
 
 body {
   font-family: 'Roboto', sans-serif;
