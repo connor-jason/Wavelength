@@ -1,5 +1,7 @@
-🌊 **Intro:**
-- This project is a web application version of the popular TikTok card game "Wavelength". I don't own or claim to own any rights to this game, I just didn't want to buy the game and wait for shipping.
+# 🌊Wavelength🌊
+
+👋 **Intro:**
+- This project is a web application version of the popular TikTok card game "Wavelength". I don't own or claim to own any rights to this game, I just didn't want to buy the game and wait for shipping. It should work on both desktop and mobile. If you have any issues please email me or message me on LinkedIn!
 
 📦 **Tech Stack:**
 - React.js
@@ -42,4 +44,5 @@ To run the project locally:
 - Start the development server with `npm start`.
 
 📸 **Video of the Website:**
-[Link to Video](https://github.com/connor-jason/Wavelength/assets/99488409/409f5738-3a1c-4717-be2c-3b200931d90f)
+![wavelength](https://github.com/connor-jason/Wavelength/assets/99488409/e6fdeb04-9923-464e-b199-ffd29244b1fe)
+
