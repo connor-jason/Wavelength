@@ -5,7 +5,7 @@
 
 📦 **Tech Stack:**
 - React.js
-- Firebase
+- Firebase (DB and hosting)
 - HTML/CSS
 
 👩🏽‍🍳 **Features:**
@@ -13,11 +13,15 @@
 - When the deck runs out of cards, it resets.
 - Option to cover/uncover the spinner circle (is there a better name for this?).
 - View the entire deck of cards in a table format.
-- Remove cards from the deck.
 - View my wonderful FAQ page.
 
 💭 **Process:**
-- The project started with setting up the React environment and integrating Firebase Realtime Database for data storage. Designing and implementing the card management features followed, including adding, viewing, and removing cards. The random card drawing functionality was added next, with consideration for covering and uncovering the drawn card. I then went into drawing the game with the help of Notability, an iPad, and an Apple Pencil. I removed the background from these images, stacked them on top of each other, and added the proper functionality to some of the images (i.e. hiding or unhiding the cover, spinning the spinner, randomizing the "triangle" portion). I then finished it off with some final CSS touches to ensure it looks good on all devices.
+- The project started with setting up the React environment and integrating Firebase Realtime Database for data storage.
+- Designing and implementing the card management features followed, including adding, viewing, and removing cards.
+- The random card drawing functionality was added next, with consideration for covering and uncovering the drawn card.
+- I then went into drawing the game with the help of Notability, an iPad, and an Apple Pencil.
+- I removed the background from these images, stacked them on top of each other, and added the proper functionality to some of the images (i.e. hiding or unhiding the cover, spinning the spinner, randomizing the "triangle" portion).
+- I then finished it off with some final CSS touches to ensure it looks good on all devices.
 
 📚 **What I learned:**
 - This project was my first dive into using Firebase for real-time database management. 
