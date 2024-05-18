@@ -102,7 +102,6 @@ function RandomCard() {
                     <button className="button" onClick={handleCoverToggle}>
                         {coverOpen ? 'Close Cover' : 'Open Cover'}
                     </button>
-                    <Link to="/deck" className="button" id="viewDeck">View Deck</Link>
                 </div>
             </div>
         </>

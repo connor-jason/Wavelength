@@ -17,20 +17,19 @@ const DisplayDeck = () => {
                 const cardNumber = document.createElement('td');
                 const left = document.createElement('td');
                 const right = document.createElement('td');
-                const removeButton = document.createElement('button'); // Create a Remove button
                 const cardId = childSnapshot.key; // Get the card ID
 
                 index++; // Increment index for each card
                 cardNumber.textContent = index;
                 left.textContent = card.left;
                 right.textContent = card.right;
-                removeButton.textContent = 'Remove'; // Set button text
-                removeButton.onclick = () => handleRemoveCard(cardId); // Attach click event handler
+
+                // Apply alternate row color based on index
+                tr.style.backgroundColor = index % 2 === 0 ? '#e7e7e7' : '#ddd';
 
                 tr.appendChild(cardNumber);
                 tr.appendChild(left);
                 tr.appendChild(right);
-                tr.appendChild(removeButton); // Append the Remove button
 
                 cardsList.appendChild(tr);
             });
@@ -55,7 +54,6 @@ const DisplayDeck = () => {
                         <th>Card Number</th>
                         <th>Left</th>
                         <th>Right</th>
-                        <th>Remove Card</th>
                     </tr>
                 </thead>
                 <tbody id="cardsList"></tbody>

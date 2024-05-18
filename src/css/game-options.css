@@ -1,12 +1,13 @@
 .gameOptionsContainer {
     display: grid;
-    grid-template-rows: 4fr 1fr;
+    grid-template-rows: 3fr 1fr;
     width: fit-content;
 }
 
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height:min-content;
 }
 
 .buttons {
