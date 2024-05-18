@@ -35,7 +35,7 @@
 To run the project locally:
 - Clone the repository from GitHub.
 - Install dependencies using `npm install`.
-- You can add your own Firebase database if you want but my api key is in there shhhhh
+- Add your own Firebase DB: you can replace my constants with your information.
 - Start the development server with `npm start`.
 
 📸 **Video of the Website:**
