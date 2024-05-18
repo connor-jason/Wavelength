@@ -16,18 +16,21 @@ function RandomCard() {
                 
                 // Filter out cards that have already been seen
                 const unseenCards = cardsArray.filter((card) => !seenCardIds.includes(card.id));
-    
+
                 if (unseenCards.length === 0) {
-                    alert('No more unseen cards available');
+                    // Reset the list of seen card IDs
+                    setSeenCardIds([]);
+                    // Fetch a new random card
+                    getRandomCard();
                     return;
                 }
-    
+
                 const randomIndex = Math.floor(Math.random() * unseenCards.length);
                 const randomCard = unseenCards[randomIndex];
                 
                 // Update the list of seen card IDs
                 setSeenCardIds([...seenCardIds, randomCard.id]);
-    
+
                 // Set the random card
                 setRandomCard(randomCard);
             } else {
