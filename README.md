@@ -17,12 +17,7 @@
 - View my wonderful FAQ page.
 
 💭 **Process:**
-- The project started with setting up the React environment and integrating Firebase Realtime Database for data storage. 
-- Designing and implementing the card management features followed, including adding, viewing, and removing cards. 
-- The random card drawing functionality was added next, with consideration for covering and uncovering the drawn card. 
-- I then went into drawing the game with the help of Notability, an iPad, and an Apple Pencil. 
-- I removed the background from these images, stacked them on top of each other, and added the proper functionality to some of the images (i.e. hiding or unhiding the cover, spinning the spinner, randomizing the "triangle" portion). 
-- I then finished it off with some final CSS touches to ensure it looks good on all devices.
+- The project started with setting up the React environment and integrating Firebase Realtime Database for data storage. Designing and implementing the card management features followed, including adding, viewing, and removing cards. The random card drawing functionality was added next, with consideration for covering and uncovering the drawn card. I then went into drawing the game with the help of Notability, an iPad, and an Apple Pencil. I removed the background from these images, stacked them on top of each other, and added the proper functionality to some of the images (i.e. hiding or unhiding the cover, spinning the spinner, randomizing the "triangle" portion). I then finished it off with some final CSS touches to ensure it looks good on all devices.
 
 📚 **What I learned:**
 - This project was my first dive into using Firebase for real-time database management. 
@@ -44,5 +39,4 @@ To run the project locally:
 - Start the development server with `npm start`.
 
 📸 **Video of the Website:**
-![wavelength](https://github.com/connor-jason/Wavelength/assets/99488409/e6fdeb04-9923-464e-b199-ffd29244b1fe)
-
+![wavelength](https://github.com/connor-jason/Wavelength/assets/99488409/a725a991-e73a-40e5-ab44-def8915bd7ad)
