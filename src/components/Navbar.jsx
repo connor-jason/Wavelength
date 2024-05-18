@@ -2,6 +2,11 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
+/**
+ * Renders the navigation bar component.
+ *
+ * @returns {JSX.Element} The rendered navigation bar.
+ */
 const Navbar = () => {
     return (
         <nav className="navbar">

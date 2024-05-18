@@ -1,4 +1,7 @@
-/* Styles for the footer */
+/*
+* Styling for the footer component
+*/
+
 footer {
     display: flex;
     justify-content: center;
@@ -10,7 +13,6 @@ footer {
     font-size: calc(1.2vh + 0.5vw);
 }
 
-/* Styles for the underline of sections */
 .underline {
     display: flex;
     justify-content: center;

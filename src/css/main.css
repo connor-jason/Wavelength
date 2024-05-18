@@ -1,3 +1,7 @@
+/*
+* General styling to be applied to all content and imports from different CSS files
+*/
+
 @import url('game.css');
 @import url('game-options.css');
 @import url('display-deck.css');

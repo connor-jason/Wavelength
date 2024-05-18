@@ -3,6 +3,11 @@ import { getDatabase, ref, set, onValue, child, get } from "https://www.gstatic.
 import { database } from '../firebase.js';
 import { Link } from 'react-router-dom';
 
+/**
+ * Renders a component that displays a random card and provides options to fetch a new random card and toggle a cover.
+ *
+ * @returns {JSX.Element} The rendered RandomCard component.
+ */
 function RandomCard() {
     const [randomCard, setRandomCard] = useState(null);
     const [coverOpen, setCoverOpen] = useState(true);
@@ -12,19 +17,21 @@ function RandomCard() {
         get(child(ref(database), 'Cards/')).then((snapshot) => {
             if (snapshot.exists()) {
                 const cards = snapshot.val();
+
+                // Convert the 'cards' object into an array of card objects with an added 'id' property
                 const cardsArray = Object.keys(cards).map((key) => ({ id: key, ...cards[key] }));
                 
                 // Filter out cards that have already been seen
                 const unseenCards = cardsArray.filter((card) => !seenCardIds.includes(card.id));
 
+                // If the deck is empty, reset it
                 if (unseenCards.length === 0) {
-                    // Reset the list of seen card IDs
                     setSeenCardIds([]);
-                    // Fetch a new random card
                     getRandomCard();
                     return;
                 }
 
+                // Select a random card from the unseen cards
                 const randomIndex = Math.floor(Math.random() * unseenCards.length);
                 const randomCard = unseenCards[randomIndex];
                 
@@ -84,6 +91,7 @@ function RandomCard() {
 
     const handleCoverToggle = () => {
         const closedImage = document.getElementById('closed');
+        
         // Toggle cover opacity
         if (closedImage.style.opacity === '1') {
             closedImage.style.opacity = '0';
