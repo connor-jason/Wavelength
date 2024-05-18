@@ -12,12 +12,14 @@ import TitleComponent from '../components/TitleComponent';
 const Home = () => {
   return (
     <>
+    <div className="home-page">
       <Navbar />
       <TitleComponent title="Wavelength😼"/>
       <div className="mainContainer">
         <DisplayGame />
         <GameOptions />
       </div>
+    </div>
     </>
   );
 };

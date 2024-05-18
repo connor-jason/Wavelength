@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function RandomCard() {
     const [randomCard, setRandomCard] = useState(null);
-    const [coverOpen, setCoverOpen] = useState(false);
+    const [coverOpen, setCoverOpen] = useState(true);
     const [seenCardIds, setSeenCardIds] = useState([]);
 
     const getRandomCard = () => {

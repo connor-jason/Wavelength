@@ -14,6 +14,13 @@ const DisplayGame = () => {
         document.addEventListener('mouseup', handleMouseUp);
     };
 
+    const handleTouchStart = (e) => {
+        e.preventDefault();
+        const touch = e.touches[0];
+        document.addEventListener('touchmove', handleTouchMove);
+        document.addEventListener('touchend', handleTouchEnd);
+    };
+
     const handleMouseMove = (e) => {
         e.preventDefault();
         const spinner = spinnerRef.current;
@@ -27,12 +34,32 @@ const DisplayGame = () => {
 
         // Apply the limited rotation angle
         spinner.style.transform = `rotate(${limitedAngle}deg)`;
+    };
 
+    const handleTouchMove = (e) => {
+        e.preventDefault();
+        const spinner = spinnerRef.current;
+        const rect = spinner.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        // Calculate angle relative to center
+        const touch = e.touches[0];
+        const angle = Math.atan2(touch.clientY - centerY, touch.clientX - centerX) * (180 / Math.PI) + 90;
+        // Ensure the rotation stays within the range of -90 to 90 degrees
+        const limitedAngle = Math.max(-90, Math.min(90, angle));
+
+        // Apply the limited rotation angle
+        spinner.style.transform = `rotate(${limitedAngle}deg)`;
     };
 
     const handleMouseUp = () => {
         document.removeEventListener('mousemove', handleMouseMove);
         document.removeEventListener('mouseup', handleMouseUp);
+    };
+
+    const handleTouchEnd = () => {
+        document.removeEventListener('touchmove', handleTouchMove);
+        document.removeEventListener('touchend', handleTouchEnd);
     };
 
     return (
@@ -47,6 +74,7 @@ const DisplayGame = () => {
                 id="spinner"
                 ref={spinnerRef}
                 onMouseDown={handleMouseDown}
+                onTouchStart={handleTouchStart}
             />
             <img src={closed} alt="closed" className="closed img" id="closed" />
         </div>

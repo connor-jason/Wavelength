@@ -14,7 +14,6 @@ const Home = () => {
     <>
       <Navbar />
       <TitleComponent title="The Deck🤗"/>
-      <CardForm />
       <DisplayDeck />
     </>
   );
