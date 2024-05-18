@@ -1,0 +1,22 @@
+/* Styles for the footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    font-size: calc(1.2vh + 0.5vw);
+}
+
+/* Styles for the underline of sections */
+.underline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 0.4vh;
+    background-color: black;
+    margin-top: 0;
+  }

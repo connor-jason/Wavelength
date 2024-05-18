@@ -1,8 +1,8 @@
 import React from 'react';
 import DisplayDeck from '../components/DisplayDeck';
-import CardForm from '../components/CardForm';
 import Navbar from '../components/Navbar';
 import TitleComponent from '../components/TitleComponent';
+import FooterComponent from '../components/FooterComponent';
 
 /**
  * The main component of the application.
@@ -15,6 +15,7 @@ const Home = () => {
       <Navbar />
       <TitleComponent title="The Deck🤗"/>
       <DisplayDeck />
+      <FooterComponent />
     </>
   );
 };

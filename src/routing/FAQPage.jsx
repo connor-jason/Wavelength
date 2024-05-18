@@ -1,9 +1,8 @@
 import React from 'react';
-import DisplayGame from '../components/DisplayGame';
-import GameOptions from '../components/GameOptions';
 import Navbar from '../components/Navbar';
 import TitleComponent from '../components/TitleComponent';
 import QuestionComponent from '../components/QuestionComponent.jsx';
+import FooterComponent from '../components/FooterComponent.jsx';
 
 /**
  * The main component of the application.
@@ -19,6 +18,7 @@ const Home = () => {
         <QuestionComponent question="Can I add and remove cards?" answer="Naur! Sorry!" />
         <QuestionComponent question="Does this work on mobile?" answer="I have no idea!!" />
         <QuestionComponent question="How do the drawings look so good?" answer="I did them myself thank you😌. Shoutout to Notability and Apple Pencil." />
+        <FooterComponent />
     </>
   );
 };

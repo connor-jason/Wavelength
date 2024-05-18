@@ -57,6 +57,7 @@ const DisplayDeck = () => {
                     </tr>
                 </thead>
                 <tbody id="cardsList"></tbody>
+                <br></br>
             </table>
         </>
     );
