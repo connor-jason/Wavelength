@@ -15,7 +15,7 @@ const Home = () => {
     <>
     <div className="home-page">
       <Navbar />
-      <TitleComponent title="Wavelength😼"/>
+      <TitleComponent title="Wavelength"/>
       <div className="mainContainer">
         <DisplayGame />
         <GameOptions />

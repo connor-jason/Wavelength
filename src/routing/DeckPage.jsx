@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <TitleComponent title="The Deck🤗"/>
+      <TitleComponent title="The Deck"/>
       <DisplayDeck />
       <FooterComponent />
     </>
