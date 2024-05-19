@@ -10,7 +10,6 @@ import { database } from '../firebase.js';
 
 
 const DisplayDeck = () => {
-    const [cards, setCards] = useState([]);
 
     useEffect(() => {
 

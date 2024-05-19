@@ -1,9 +1,3 @@
-/**
- * Component for displaying the game.
- *
- * @component
- * @returns {JSX.Element} The JSX element representing the game display.
- */
 import React, { useRef } from 'react';
 import spinner from '../images/spinner.png';
 import open_white from '../images/open_white.png';
@@ -11,7 +5,12 @@ import open_clear from '../images/open_clear.png';
 import closed from '../images/closed.png';
 import triangles from '../images/triangles.png';
 
-
+/**
+ * Component for displaying the game.
+ *
+ * @component
+ * @returns {JSX.Element} The JSX element representing the game display.
+ */
 const DisplayGame = () => {
     const spinnerRef = useRef(null); // Reference to the spinner image
 
