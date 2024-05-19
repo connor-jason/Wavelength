@@ -44,4 +44,5 @@ To run the project locally:
 
 📸 **Video of the Website:**
 
-![wavelength](https://github.com/connor-jason/Wavelength/assets/99488409/a725a991-e73a-40e5-ab44-def8915bd7ad)
+![wavelength](https://github.com/connor-jason/Wavelength/assets/99488409/f17bf103-f01c-4039-b7a3-63f1fcdb2872)
+
