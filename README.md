@@ -2,6 +2,7 @@
 
 👋 **Intro:**
 - This project is a web application version of the popular TikTok card game "Wavelength". I don't own or claim to own any rights to this game, I just didn't want to buy the game and wait for shipping. It should work on both desktop and mobile. If you have any issues please email me or message me on LinkedIn!
+- Play now at: [https://wavelength-6ce6f.web.app/](https://wavelength-6ce6f.web.app/)
 
 📦 **Tech Stack:**
 - React.js
